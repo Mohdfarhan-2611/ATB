@@ -3,7 +3,7 @@ package Task.Task_25092024;
 public class Task4 {
     public static void main(String[] args) {
 
-        String str = "Pramod";
+        String str = "PramodFarhan";
         int constant = 0;
         int vowels = 0;
 
