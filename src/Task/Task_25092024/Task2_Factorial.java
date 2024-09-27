@@ -1,4 +1,4 @@
-package Sept.Sept_25092024;
+package Task.Task_25092024;
 
 public class Task2_Factorial {
     public static void main(String[] args) {
