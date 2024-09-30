@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Java013 {
     public static void main(String[] args) {
-        //44. Write a Program to check Armstrong numbers or Not
+        // Write a Program to check Armstrong numbers or Not
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number");
