@@ -7,23 +7,22 @@ public class Task3_Prime {
         {
            // System.out.println(i/2); //Quotient
             // System.out.println(i%2); //remainder
-            if(i<=1)
-            {
-                System.out.println(i);
-            }
-            else if(i==2)
+            if(i==2)
             {
                 System.out.println(i + " prime");
             }
-            else if(i>=3)
+            else
             {
                 for (int j = 2; j < i; j++)
                 {
 
-                    if (i % 1 == 0 && i % j == 0)
+                    if (i % j == 0)
                     {
-                        System.out.println(i);
                         break;
+                    }
+                    else if(j==i-1)
+                    {
+                        System.out.println(i + " prime");
                     }
 
                 }
