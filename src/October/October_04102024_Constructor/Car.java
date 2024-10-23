@@ -7,7 +7,7 @@ public class Car {
     int seats;
     String Engine;
 
-    Car()
+    public Car()
     {
         System.out.println("This is default constructor");
     }
