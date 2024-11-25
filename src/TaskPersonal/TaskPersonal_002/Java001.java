@@ -8,8 +8,6 @@ public class Java001 {
         {
             System.out.println(c);
         }
-
-
         byte b= 10;  //1Byte 8 bits   //00000101
     }
 }
