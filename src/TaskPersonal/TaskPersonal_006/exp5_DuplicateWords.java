@@ -6,7 +6,7 @@ public class exp5_DuplicateWords {
 
     public static void main(String[] args) {
 
-       Duplicate_Words("Java is Java Java is is is Java");
+       Duplicate_Words("Automation is Needed is");
     }
 
      public static void Duplicate_Words(String inputString)
@@ -27,12 +27,16 @@ public class exp5_DuplicateWords {
                map1.put(word, 1);
             }
 
+
+
             if(map1.get(word) > MaxminumCount)
             {
                 MaxWord = word;
                 MaxminumCount = map1.get(word);
             }
         }
+
+         System.out.println(map1);
          System.out.println(MaxWord + ":" + MaxminumCount);
      }
 }
