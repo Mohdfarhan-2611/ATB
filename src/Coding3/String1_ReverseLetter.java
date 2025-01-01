@@ -34,7 +34,7 @@ public class String1_ReverseLetter {
 //        Scanner sc = new Scanner(System.in);
 //        System.out.println("Enter the string");
 //        String input = sc.next();
-        String result = ReverseLetter("you are Farhan");
+        String result = ReverseLetter("1ab2");
         System.out.println(result);
 
     }

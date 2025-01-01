@@ -27,6 +27,8 @@ public class String10_UniqueString {
         }
 
         System.out.println(hashSet.stream().map(String::valueOf).collect(Collectors.joining()));
+        System.out.println(hashSet.stream().map(String::valueOf).collect(Collectors.joining()));
+        System.out.println(hashSet.stream().map(String::valueOf).collect(Collectors.joining()));
 
 
 
