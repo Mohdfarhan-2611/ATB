@@ -2,31 +2,32 @@ package Coding2;
 
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 public class String10_UniqueString {
 
     public static void main(String[] args) {
 
-        String input = "Java Automation"; //output: Automin
-        input = input.toLowerCase();
-        String[] inputArray = input.split(" ");
-   //     HashSet<Character> hashSet = new HashSet<>();
-        ArrayList list = new ArrayList<>();
+        String input = "Java Automation"; //output: Jav Automin
+        char[] inputArray = input.toCharArray();
+        LinkedHashSet<Character> hashSet = new LinkedHashSet<>();
 
-        for(String c : inputArray)
+        for(char c : inputArray)
         {
-            if(list.contains(c))
+            if(hashSet.contains(c) || c == ' ')
             {
                 continue;
             }
             else
             {
-                list.add(c);
+                hashSet.add(c);
             }
         }
 
-        System.out.println(list.toString());
+        System.out.println(hashSet.stream().map(String::valueOf).collect(Collectors.joining()));
+
 
 
     }
