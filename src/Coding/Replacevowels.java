@@ -17,7 +17,7 @@ public class Replacevowels {
 
     public static void main(String[] args) {
 
-        String input = "name";
+        String input = "name";  //"nxmx";
         String Lowercaseinput = input.toLowerCase();
         char[] inputArray = Lowercaseinput.toCharArray();
         StringBuilder sb = new StringBuilder();
