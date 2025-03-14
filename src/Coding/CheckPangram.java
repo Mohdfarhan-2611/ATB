@@ -4,25 +4,32 @@ public class CheckPangram {
 
     public static void main(String[] args) {
 
-        String input = "The quick brown for jumps over the lazy do";
+        String input = "Pack my box with five dozen liquor jugs";
         String alphabet = "abcdefghijklmnopqrstuvwxyz";
         String lowercaseinput = input.toLowerCase();
+        int count=0;
 
         if(lowercaseinput.length()>=26)
         {
-            for(int i=0; i<=lowercaseinput.length()-1; i++)
-            {
-                if(alphabet.indexOf(lowercaseinput.charAt(i))>0)
-                {
-                    //System.out.println("pangram");
-                    continue;
-                }
-                else
-                {
+            for(char c : alphabet.toCharArray()){
+                if(lowercaseinput.indexOf(c)==-1){
                     System.out.println("Not Pangram");
-                    break;
+                }
+                else{
+                    count++;
                 }
             }
         }
+        else{
+            System.out.println("not pangram");
+        }
+
+        if(count==26){
+            System.out.println("Pangram");
+        }
+        else{
+            System.out.println("Not Pangram");
+        }
+
     }
 }
